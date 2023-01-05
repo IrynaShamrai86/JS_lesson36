@@ -1,0 +1,107 @@
+/*Створити HTML-сторінку з великою таблицею.*/
+
+body {
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    background-color: #69de8d;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    margin-right: 150px;
+    margin-bottom: 100px;
+}
+
+tr:nth-of-type(odd) {
+    background: #d3d3d3;
+}
+
+tr:nth-of-type(even) {
+    background: #f1f5f5;
+}
+
+th {
+    background-color: #666;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.icon {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 15px;
+    float: right;
+    margin-top: 5px;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+
+/*Створити HTML-сторінку з блоком тексту в рамці.*/
+
+#resizable-div {
+    border: 3px solid #06382e;
+    background-color: #666;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    margin-right: 150px;
+}
+
+#button {
+    position: absolute;
+    background-color: #000;
+    cursor: nwse-resize;
+    width: 12px;
+    height: 12px;
+    bottom: -1px;
+    right: -1px;
+}
+
+.text {
+    color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: -25px 0;
+}
+
+
+
+/*Створити HTML-сторінку для відображення/редагування тексту через CTRL+E та CTRL+S */
+
+#editable {
+    border: 3px solid #06382e;
+    background-color: #15955a;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+    color: #1e1e1e;
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.edit {
+    margin-top: 0;
+}
